@@ -501,7 +501,43 @@ color: rgba(255, 255, 255, 0.6);
  
 border-bottom:1px solid#ECECEC; 
 }
+
+.card-img-wrapper
+{
+ position:relative;
+
+
+}
  
+.beckdrob
+{
+  position: absolute;
+  top: 0;
+  left:0;
+  
+  width: 100%;
+  height: 100%;
+  background-color:rgba(33, 150, 243, 0.9);
+  color: #FFFFFF;
+  overflow: auto;
+   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03;
+ transform: translateY(100%);
+ transition:transform 250ms linear;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+}
+
+.card-img-wrapper:hover .beckdrob,
+.card-img-wrapper:focus .beckdrob
+{
+  transform: translateY(0%);
+}
+
 
        .flex-container 
         { 
