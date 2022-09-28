@@ -8,7 +8,10 @@
     --secondary-text-color-theme-light:#757575;
     --secondary-background-color-theme-light:#F5F4FA; 
     --secondary-background-btn-color-theme-light:#188CE8;
-}
+    --transition-dur-and-func:250ms linear;
+  
+  }
+
 
 .link
 {
@@ -213,8 +216,17 @@ url(../images/Img-hero.jpg);
     color:var(--primary-text-color-theme-dark);
     
     
-   }   
-    
+   }  
+   
+   
+  
+width: 1600px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: rgba(0, 0, 0, 0.2);
+
  
 .do-it
 {
@@ -243,9 +255,11 @@ url(../images/Img-hero.jpg);
     border: navajowhite;
     letter-spacing: 0.06em;
     height: 50px;
-
+transition: color var(--transition-dur-and-func),
+background-color: var(--transition-dur-and-func);
     color:var(--primary-text-color-theme-dark); 
-    background:var(--primary-text-color-theme-light);
+    background-color:var(--primary-text-color-theme-light);
+
    
     border-radius: 4px;
      
@@ -287,6 +301,9 @@ padding:6px 22px;
 color:var(--accent-color);
  background:var(secondary-background-color-theme-light) ;
  border-radius: 4px;
+ transition: color var(--transition-dur-and-func),
+ background-color: var(--transition-dur-and-func);
+
 }
 .filter-list:hover,
 .filter-list:focus
@@ -402,6 +419,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
  {       font-weight: 500;
     font-family:Roboto,sans-serif;
      color:var(--accent-color);
+     transition: color var(--transition-dur-and-func),
+   
+
 }
 .menu-link:hover,
 .menu-link:focus
@@ -416,6 +436,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
   {font-weight: 500;
     fill:currentColor;
     color:var( --secondary-text-color-theme-light);
+    transition: color var(--transition-dur-and-func);
+
 
    }
    .contakt-email:hover,
@@ -427,6 +449,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 
   .contakt-stil
+  transition: color var(--transition-dur-and-func);
+
   { 
    color:var(--accent-color);
   }
@@ -509,7 +533,7 @@ border-bottom:1px solid#ECECEC;
 
 }
  
-.beckdrob
+.card-img-text
 {
   position: absolute;
   top: 0;
@@ -519,24 +543,26 @@ border-bottom:1px solid#ECECEC;
   height: 100%;
   background-color:rgba(33, 150, 243, 0.9);
   color: #FFFFFF;
-  overflow: auto;
+  overflow-y: auto;
    font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03;
  transform: translateY(100%);
  transition:transform 250ms linear;
-  padding-top: 63px;
-  padding-right: 24px;
-  padding-bottom: 63px;
-  padding-left: 24px;
+  padding: 24px 63px;
+
+   opacity: 0;
 }
 
-.card-img-wrapper:hover .beckdrob,
-.card-img-wrapper:focus .beckdrob
+.flex-element:hover .card-img-text,
+.flex-element:focus .card-img-text
 {
   transform: translateY(0%);
+ opacity: 1;
+ overflow: hidden;
 }
+
 
 
        .flex-container 
@@ -547,6 +573,7 @@ border-bottom:1px solid#ECECEC;
     gap: 30px;
     padding-left: 0px;
     padding-right: 0px;
+
     
     }  
     .currentColor.filter-list.Усі
@@ -566,6 +593,7 @@ color:var(--primary-text-color-theme-light);
 { display: block;
   text-decoration: none;
   width: 370px;
+  transition: color var(--transition-dur-and-func);
 
 
 }
@@ -644,6 +672,9 @@ width: 44px;
 height: 44px;
 border-radius: 50px;
 background-color: #FFFFFF;
+transition: background-color var(--transition-dur-and-func);
+
+
  /* Fill: Solid 
  material shadow v1 
 
@@ -655,6 +686,8 @@ border-radius: 0px 0px 4px 4px; */
 {
  
 background-color: #2196F3;
+transition: color var(--transition-dur-and-func),
+background-color: var(--transition-dur-and-func);
  
 }
 .social-list-link:hover .social-list-icon
@@ -691,6 +724,9 @@ align-items:center;
 width: 100%;
 height: 100%;
 fill: #AFB1B8;
+
+transition: color var(--transition-dur-and-func);
+
 
 } 
 .customers-list-link:hover,
@@ -760,6 +796,7 @@ justify-content: center;
   width: 10px;
   height: 16px; 
   margin-right: 10px;
+  transition: fill var(--transition-dur-and-func);
 
 }
 
@@ -800,6 +837,7 @@ align-items: center;
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  transition: fill var(--transition-dur-and-func);
 
 }
 
@@ -861,7 +899,9 @@ width: 44px;
 height: 44px;
 border-radius: 50px;
 background-color:
- rgba(255, 255, 255, 0.1) 
+ rgba(255, 255, 255, 0.1); 
+
+transition:background-color: var(--transition-dur-and-func);
 } 
 
 
