@@ -83,16 +83,13 @@ img
  color:var(--primary-text-color-theme-dark);}
 
   .accent-logo
-
   { font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-   
-       
-    color:  var(--primary-text-color-theme-light);
+      color:  var(--primary-text-color-theme-light);
   }
 
     h1,h2,h3,h4,p
@@ -160,7 +157,17 @@ img
   margin-left: auto;
 }
 
-
+.current::after 
+{
+  content: ""
+  position: absolute;
+  bottom: -1px;
+  left:0;
+  width:100%;
+  height:4px;
+  background-color: #2196F3;
+  border-radius: 2px;
+}
 
      
     /* ============heder==================    */
@@ -428,7 +435,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 
   .contakt-email
-  {font-weight: 500;
+  {
+    font-weight: 500;
     fill:currentColor;
     color:var( --secondary-text-color-theme-light);
     transition: color var(--transition-dur-and-func);
@@ -524,7 +532,7 @@ border-bottom:1px solid#ECECEC;
 .card-img-wrapper
 {
  position:relative;
-
+ overflow: hidden;
 
 }
  
@@ -546,7 +554,7 @@ border-bottom:1px solid#ECECEC;
  transform: translateY(100%);
  transition:transform 250ms linear;
   padding: 24px 63px;
-
+overflow: hidden;
    opacity: 0;
 }
 
@@ -555,7 +563,7 @@ border-bottom:1px solid#ECECEC;
 {
   transform: translateY(0%);
  opacity: 1;
- overflow: hidden;
+ 
 }
 
 
@@ -773,8 +781,49 @@ justify-content: center;
  background-color: #F5F4FA;    
   margin-bottom: 30px;
 }
+/* {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 379px;
+  background-color:rgba(47, 48, 58, 0.8);
+} */
+.gadget-dop 
+{
+     position: relative;
+}
 
- 
+
+.title-design-solutions,
+.title-mobile-applications,
+.title-desktop-applications
+{
+
+position: absolute;
+ bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+font-family:Roboto, sans-serif;
+font-size: 14px;
+line-height: 1.14;
+
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color:
+rgba(47, 48, 58, 0.8);      
+}
+
+
 
 /* .benefits-icon:focus
 {
@@ -921,7 +970,7 @@ fill:
 #FFFFFF;
 }
 
-.backdrop
+/* backdrop
 {
   position:fixed;
   top: 0;
@@ -936,26 +985,16 @@ fill:
   visibility: visible;
   pointer-events:none;
 
-
-
 }
 
-
-
-.backdrop.is-hidden{
+backdrop.is-hidden
+{
 opacity: 0;
 visibility: hidden;
 pointer-events: none;
-
-
-
 }
 
-
-
-
-
-.modal
+modal
 {
   position:absolute;
   top:50%;
@@ -965,24 +1004,9 @@ pointer-events: none;
   height: 581px;
 background-color:#FFFFFF ;
 
-
-
-
-/* Effect: Drop shadow
-Radius: 1px
-Offset: 0px, 2px
-rgba(0, 0, 0, 0.2)
-Effect: Drop shadow
-Radius: 1px
-Offset: 0px, 1px
-rgba(0, 0, 0, 0.14)
-Effect: Drop shadow
-Radius: 3px
-Offset: 0px, 1px
-rgba(0, 0, 0, 0.12) */
 }
 
-.model-close-icon{
+model-close-icon{
   position: absolute;
   top: 8px;
   right: 8px;
@@ -996,4 +1020,4 @@ rgba(0, 0, 0, 0.12) */
   padding: 0px;
 
 
-}
+} */ */
