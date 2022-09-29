@@ -220,12 +220,7 @@ url(../images/Img-hero.jpg);
    
    
   
-width: 1600px;
-height: 1024px;
-left: 0px;
-top: 0px;
 
-background: rgba(0, 0, 0, 0.2);
 
  
 .do-it
@@ -928,7 +923,7 @@ fill:
 
 .backdrop
 {
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -937,18 +932,39 @@ fill:
   background-color:
   rgba(0, 0, 0, 0.2);
 
+  opacity: 1;
+  visibility: visible;
+  pointer-events:none;
+
+
 
 }
+
+
+
+.backdrop.is-hidden{
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+
+
+
+}
+
+
+
+
+
 .modal
 {
   position:absolute;
-  top: 50%;
-  left: 50%;
- transform:translate:(-50%,-50%); 
+  top:50%;
+  left:50%;
+ transform:translate(-50%, -50%); 
   width: 528px;
   height: 581px;
-background-color:
-#FFFFFF ;
+background-color:#FFFFFF ;
+
 
 
 
@@ -966,3 +982,18 @@ Offset: 0px, 1px
 rgba(0, 0, 0, 0.12) */
 }
 
+.model-close-icon{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:rgba(0, 0, 0, 0.1) ;
+  padding: 0px;
+
+
+}

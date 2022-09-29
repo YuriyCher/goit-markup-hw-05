@@ -36,7 +36,6 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
     </ul>
   </nav>
     <ul class="list contakt">
-
       <li class="post-email-link item-contakt"> 
         <a class="item-contakt contakt-email link-port"href>
         <svg class="post-email-icon">
@@ -70,7 +69,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
   
   
      <h1 class="title-main">Ефективні рішення для вашого бізнесу</h1>
-       <button class="modal-open-btn button" type="button">Замовити послугу</button>
+       <button class="modal-open-btn button data-model-open" type="button">Замовити послугу</button>
   </div>
       </div>
 </section>
@@ -431,12 +430,18 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
    
  </footer>
  
-<div class="backdrop">
-  <div class="modal">
-  <button class="modal-close-btn"></button>
+<div class="backdrop data-model">
+  <div class="modal    ">
+  <button type="button" class="modal-close-btn data-model-close">
+  <svg class="model-close-icon"  >
+    <use href="./images/symbol-defs 2.svg#icon-close"></use>
+  </svg>
+
+  </button>
+    </div>
 
 </div>
 </div>
-
+<script src="./js/modal.js"></script>
 </body>
 </html>
