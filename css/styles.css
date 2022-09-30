@@ -986,10 +986,12 @@ fill:
   background-color:
   rgba(0, 0, 0, 0.2);
 
-  opacity: 1;
+   opacity: 1;
   visibility: visible;
-  pointer-events:none; 
-
+  pointer-events:  auto; 
+  
+  transition: opacity 500ms ease, visibility 500ms ease;
+  
 }
 
 .backdrop.is-hidden
