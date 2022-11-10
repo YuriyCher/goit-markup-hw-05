@@ -210,8 +210,6 @@ url(../images/Img-hero.jpg);
     margin-bottom: 30px;
     letter-spacing: 0.06em;
     color:var(--primary-text-color-theme-dark);
-    
-    
    }  
    
    
@@ -246,7 +244,7 @@ url(../images/Img-hero.jpg);
     border: navajowhite;
     letter-spacing: 0.06em;
     height: 50px;
-transition:background-color var(--transition-dur-and-func);
+    transition:background-color var(--transition-dur-and-func);
     color:var(--primary-text-color-theme-dark); 
     background-color:var(--primary-text-color-theme-light);
 
@@ -334,10 +332,11 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
   font-size: 14px;
   line-height:1.14;
   letter-spacing: 0.03em;
+  margin-bottom:10px; 
 }
 
 .note-benefits
- { margin-top:10px; 
+ {
  
     font-weight: 400;
     font-size: 14px;
@@ -361,8 +360,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .item-team
 {
-  
-  background: var(--primary-text-color-theme-dark);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+ background: var(--primary-text-color-theme-dark);
+ 
 }
    
 .team-liter 
@@ -381,14 +382,14 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     .team-name
      { 
        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
+       font-size: 16px;
+       line-height: 1.18;
+       margin-bottom:  10px;
+       text-align: center;
+       letter-spacing: 0.03em;
+       color:var(--accent-color);
    
-    text-align: center;
-    letter-spacing: 0.03em;
-   color:var(--accent-color);
-   
-   background:var(--primary-text-color-theme-dark);
+      background:var(--primary-text-color-theme-dark);
   }
     
 .team-speciality
@@ -396,7 +397,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     font-weight: 400;
     text-align: center;
     letter-spacing: 0.03em;
-     margin-top:  10px;
+    
      margin-bottom: 16px;
       color:var(--secondary-text-color-theme-light);
   }
@@ -509,20 +510,16 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
   
 
     .tel-port
-    {
-      font-family: 'Roboto';
+{
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-
-
 letter-spacing: 0.03em;
-
 color: rgba(255, 255, 255, 0.6);
-     
 
-    }
+}
    
    
    /* Портфоліо */
@@ -687,8 +684,8 @@ transition: background-color var(--transition-dur-and-func);
  /* Fill: Solid 
  material shadow v1 
 
- box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px; */
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;  */
 }
 .social-list-link:hover,
 .social-list-link:focus
@@ -736,29 +733,24 @@ align-items:center;
 width: 100%;
 height: 100%;
 fill: #AFB1B8;
-
-transition: fill var(--transition-dur-and-func), border(--transition-dur-and-func); 
+transition: fill var(--transition-dur-and-func),border(--transition-dur-and-func); 
 } 
 .customers-list-link:hover,
 .customers-list-link:focus
 {
   fill:#2196F3;
   border-color:#2196F3 ;
-
-
+  transition: fill var(--transition-dur-and-func), border(--transition-dur-and-func); 
 }
 .customers-list-icon
 {
   width: 106px;
   height: 60px;
-
 }
 .customers-list-icon:focus,
 .customers-list-icon:hover 
 {
   fill:#2196F3;
-
-
 }
 
 
